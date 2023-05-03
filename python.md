@@ -151,7 +151,8 @@ Pipfile содержит имена установленных пакетов с
 `verify\_ssl = false`
 `name = "pypi"`
 
-…
+`…`
+
 `[packages]`
 
 `wheel1 = {version="\*", index="logical\_name"}`
@@ -159,7 +160,9 @@ Pipfile содержит имена установленных пакетов с
 `wheel2 = {version="0.41.1", index="logical\_name"}`
 
 `public\_project = "\*"`
+
 `…`
+
 **Установка в pip**
 
 `pip install --no-index --find-links /path/to/deps/ -r requirements.txt`
