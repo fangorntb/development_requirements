@@ -143,7 +143,8 @@ Pipfile содержит имена установленных пакетов с
 
 `pipenv run pypi-server -p 8080 ./packages`
 
-`pipfile`
+**pipfile**
+
 `[[source]]`
 
 `url = "http://hostname:8080/simple"`
