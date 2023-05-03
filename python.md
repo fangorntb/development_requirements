@@ -133,38 +133,33 @@ Pipfile содержит имена установленных пакетов с
 
 **Подготовка сервера pypi**
 
-`mkdir private\_pypi && cd private\_pypi
+`mkdir private\_pypi && cd private\_pypi`
 
-pipenv install
+`pipenv install`
 
-pipenv install pypiserver
+`pipenv install pypiserver`
 
-mkdir packages
+`mkdir packages`
 
-pipenv run pypi-server -p 8080 ./packages
+`pipenv run pypi-server -p 8080 ./packages`
 
-pipfile
+`pipfile`
+`[[source]]`
 
-[[source]]
+`url = "http://hostname:8080/simple"`
 
-url = "http://hostname:8080/simple"
-
-verify\_ssl = false
-
-name = "pypi"
+`verify\_ssl = false`
+`name = "pypi"`
 
 …
+`[packages]`
 
-[packages]
+`wheel1 = {version="\*", index="logical\_name"}`
 
-wheel1 = {version="\*", index="logical\_name"}
+`wheel2 = {version="0.41.1", index="logical\_name"}`
 
-wheel2 = {version="0.41.1", index="logical\_name"}
-
-public\_project = "\*"
-
-…
-`
+`public\_project = "\*"`
+`…`
 **Установка в pip**
 
 `pip install --no-index --find-links /path/to/deps/ -r requirements.txt`
