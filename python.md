@@ -76,9 +76,13 @@ pipenv представляет собой менеджер пакетов, ко
 Чтобы установить pip, необходимо выполнить:
 
 > sudo apt install software-properties-common python-software-propertiessudo 
+> 
 > add-apt-repository ppa:pypa/ppa
+> 
 > sudo apt update
+> 
 > sudo apt install pipenvpython –m 
+> 
 > pip install ––user pipenv
 
 Также возможна установка на конкретную версию:
@@ -94,6 +98,7 @@ pipenv install --python 3.6
 При работе с юпитером, необходимо установить jupyter в pipenv:
 
 > pipenv install jupyterpipenv 
+> 
 > run jupyter notebook
 
 **Использование**
