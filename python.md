@@ -75,31 +75,26 @@ pipenv представляет собой менеджер пакетов, ко
 
 Чтобы установить pip, необходимо выполнить:
 
-> sudo apt install software-properties-common python-software-propertiessudo 
-> 
-> add-apt-repository ppa:pypa/ppa
-> 
-> sudo apt update
-> 
-> sudo apt install pipenvpython –m 
-> 
-> pip install ––user pipenv
-
+`sudo apt install software-properties-common python-software-propertiessudo 
+add-apt-repository ppa:pypa/ppa
+sudo apt update
+sudo apt install pipenvpython –m 
+pip install ––user pipenv
+`
 Также возможна установка на конкретную версию:
 
-pipenv install --python 3.6
+`pipenv install --python 3.6`
 
 Далее можно просмотреть версию пакетного менеджера с помощью:
 
-> pipenv version
+`pipenv version`
 
 Далее необходимо зайти в вашу IDE и сменить интерпретатор на pipenv. Обычно, после полноценной установки IDE автоматически обнаруживает pipenv, однако если этого не произошло, на сайте разработчиков сред для разработки можно найти информацию о том, как выполнить настройку. Для Pycharm: [https://www.jetbrains.com/help/pycharm/pipenv.html](https://www.jetbrains.com/help/pycharm/pipenv.html), в другом случае достаточно выполнить pipenv shell и конфигурировать запуск.
 
 При работе с юпитером, необходимо установить jupyter в pipenv:
 
-> pipenv install jupyterpipenv 
-> 
-> run jupyter notebook
+`pipenv install jupyterpipenv 
+run jupyter notebook`
 
 **Использование**
 
@@ -109,11 +104,11 @@ Pipfile содержит имена установленных пакетов с
 
 Установите всё, что раньше писалось в requirements:
 
-pipenv install -r requirements.txt
+`pipenv install -r requirements.txt`
 
 Далее выполните:
 
-pipenv requirements \> requirements.txt
+`pipenv requirements \> requirements.txt`
 
 Загляните в файл и вы увидите все зависимости вашего проекта с указанием версий python.
 
@@ -121,11 +116,11 @@ pipenv requirements \> requirements.txt
 
 После установки запустите
 
-pip download -d ./path/to/dependencies -r requirements.txt
+`pip download -d ./path/to/dependencies -r requirements.txt`
 
 Аналогично работает команда:
 
-pip wheel -r requirements.txt -w ./path/to/dependencies
+`pip wheel -r requirements.txt -w ./path/to/dependencies`
 
 У вас скачаются все пакеты, находящиеся в requirements.txt.
 
@@ -133,7 +128,7 @@ pip wheel -r requirements.txt -w ./path/to/dependencies
 
 **Подготовка сервера pypi**
 
-mkdir private\_pypi && cd private\_pypi
+`mkdir private\_pypi && cd private\_pypi
 
 pipenv install
 
@@ -164,9 +159,9 @@ wheel2 = {version="0.41.1", index="logical\_name"}
 public\_project = "\*"
 
 …
-
+`
 **Установка в pip**
 
-pip install --no-index --find-links /path/to/deps/ -r requirements.txt
+`pip install --no-index --find-links /path/to/deps/ -r requirements.txt`
 
 **ВСЕ ПАКЕТЫ ДОЛЖНЫ БЫТЬ СКАЧАНЫ И ДОСТУПНЫ ДЛЯ ДЕПЛОЯ РАЗРАБОТЧИКУ, КОТОРЫЙ ЗАНИМАЕТСЯ ДОСТАВКОЙ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ НА ПРОДУКТОВЫЙ СЕРВЕР!**
