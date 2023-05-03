@@ -165,19 +165,12 @@ pipenv предоставляет великолепную поддержку д
 
 Чтобы установить pip, необходимо выполнить:
 
-+-----------------------------------------------------------------------+
-| sudo apt install software-properties-common                           |
-| python-software-properties                                            |
-|                                                                       |
-| sudo add-apt-repository ppa:pypa/ppa                                  |
-|                                                                       |
-| sudo apt update                                                       |
-|                                                                       |
-| sudo apt install pipenv                                               |
-|                                                                       |
-| python --m pip install ----user pipenv                                |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+`sudo apt install software-properties-common
+python-software-properties` 
+`sudo add-apt-repository ppa:pypa/ppa`
+`sudo apt update`
+`sudo apt install pipenv`                    
+`python --m pip install ----user pipenv`     
 
 Также возможна установка на конкретную версию:
 
