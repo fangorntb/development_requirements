@@ -2,7 +2,7 @@
 
 **PEP 8 и лучшие практики code-style**
 
-[[https://pep8.org/]{.underline}](https://pep8.org/)
+[https://pep8.org/](https://pep8.org/)
 
 Код необходимо разрабатывать таким образом:
 
